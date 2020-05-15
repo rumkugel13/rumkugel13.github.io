@@ -1,0 +1,127 @@
+[
+	{
+        "name": "StackItUp",
+        "year": 2020,
+        "preview": "stackitup_preview.png",
+		"image": "stackitup_screenshot.png",
+        "status": "In-Progress",
+        "features": 
+			[
+				"Made in MonoGame", 
+				"Tower stacking game",
+				"Physics simulation",
+				"Tweening using easing functions",
+				"Android build",
+				"Touchscreen support"
+			],
+		"tags":
+			[
+				"game", "monogame", "physics", "android"
+			]
+    },
+	{
+        "name": "EightBall",
+        "year": 2020,
+        "preview": "eightball_preview.png",
+		"image": "eightball_screenshot.png",
+        "status": "Discontinued",
+        "features": 
+			[
+				"Made in MonoGame", 
+				"Classic pool variant 8ball", 
+				"Soundeffects", 
+				"Built around same engine",
+				"Physics simulation",
+				"Assets from public domain"
+			]
+    },
+	{
+        "name": "SpaceInvaders",
+        "year": 2020,
+        "preview": "spaceinvaders_preview.png",
+		"image": "spaceinvaders_screenshot.png",
+        "status": "Discontinued",
+        "features": 
+			[
+				"Second game made in MonoGame", 
+				"New entity-component architecture", 
+				"Own pixelart", 
+				"Built around own engine"
+			]
+    },
+	{
+        "name": "Asteroids",
+        "year": 2019,
+        "preview": "asteroids_preview.png",
+		"image": "asteroids_screenshot.png",
+        "status": "Discontinued",
+        "features": 
+			[
+				"First game made in MonoGame", 
+				"Entity-Component-System", 
+				"Multiplayer via Lidgren.Network", 
+				"Update loop based", 
+				"Built around own engine"
+			]
+    },
+	{
+        "name": "ExplosivesDude_WPF",
+        "year": 2017,
+        "preview": "explosivesdude_wpf_preview.png",
+		"image": "explosivesdude_wpf_screenshot.png",
+        "status": "Discontinued",
+        "features": 
+			[
+				"Up to 4 player P2P multiplayer via tcp", 
+				"Own pixelart", 
+				"Made in WPF", 
+				"Event based, no update loop", 
+				"Based on bomberman", 
+				"Player selection"
+			]
+    },
+	{
+        "name": "Minesweeper_WPF",
+        "year": 2014,
+        "preview": "minesweeper_wpf_preview.png",
+		"image": "minesweeper_wpf_screenshot.png",
+        "status": "Discontinued",
+        "features": 
+			[
+				"Classic minesweeper",
+				"Made in WPF",
+				"Single code file",
+				"Progress indicator"
+			]
+    }, 
+	{
+        "name": "Snake_WPF",
+        "year": 2013,
+        "preview": "snake_wpf_preview.png",
+		"image": "snake_wpf_screenshot.png",
+        "status": "Discontinued",
+        "features": 
+			[
+				"Networked multiplayer via tcp",
+				"Local Multiplayer",
+				"No art", 
+				"Made in WPF",
+				"Custom WPF user controls"
+			]
+    }, 
+	{
+        "name": "Tetris_WPF",
+        "year": 2013,
+        "preview": "tetris_wpf_preview.png",
+		"image": "tetris_wpf_screenshot.png",
+        "status": "Discontinued",
+        "features": 
+			[
+				"First game ever", 
+				"No art", 
+				"WPF, no Engine", 
+				"Close to tetris guideline", 
+				"No update loop"
+			]
+    }
+]

@@ -1,0 +1,120 @@
+body { 
+	margin-left: auto;
+    margin-right: auto;
+	font-family: 'Ubuntu', sans-serif;
+	background: #2c3e50;
+	color: #ecf0f1;
+}
+
+header {
+	text-align: center;
+}
+
+footer {
+	text-align: center;
+}
+
+.subheader {
+	text-align: center;
+}
+
+.content {
+	margin-bottom:20px;
+	border: 2px;
+	border-color: #7f8c8d;
+	border-style: solid;
+	border-radius: 10px;
+	background: #34495e;
+	padding:10px;
+}
+
+.wrapper {
+	display: flex;
+	min-width: 300px;
+}
+
+.element {
+	box-sizing:border-box;
+}
+
+.element:nth-child(2) {
+	padding-left:10px;
+}
+
+.element:nth-child(3) {
+  flex: 0.3;
+}
+
+@media screen and (max-width:550px) {
+  .wrapper 
+  { 
+	flex-wrap: wrap;  
+  }
+  .element:first-child 
+  { 
+	flex-basis: 100%;
+	align-items: center;
+	align-content: center; 
+  }
+  a {
+	  display: flex; 
+    justify-content: center; 
+    align-items: center;
+  }
+}
+
+.extra {
+	text-align: right;
+	margin-left:auto; 
+	display:flex;
+	flex-direction: column;
+}
+
+.bot {
+	align-self:bottom;
+	margin-top:auto;
+	margin-bottom:10px;
+}
+
+.top {
+	margin-top:10px;
+	margin-bottom:auto;
+}
+
+img {
+	color: #bdc3c7; 
+	text-align: center;
+}
+
+.container {
+	max-width:720px;
+	padding-left:20px;
+	padding-right:20px;
+	margin-left:auto; 
+	margin-right:auto;
+}
+
+.description {
+
+}
+
+.paragraph {
+	margin-left: 10px;
+	margin-right: 10px;
+}
+
+footer a:link {
+  color: #ecf0f1;
+}
+
+footer a:visited {
+  color: #ecf0f1; 
+}
+
+footer a:hover {
+  color: #3498db;
+}
+
+footer a:active {
+  color: #3498db;
+}
