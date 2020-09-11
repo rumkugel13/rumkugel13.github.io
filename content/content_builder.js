@@ -45,16 +45,31 @@ function createSingleProjectEntry(container, project) {
 		divImage.appendChild(aImage);
 		main.appendChild(divImage);
 		
-		// create div + h1 + featurelist
+		// create div + title + featurelist
 		var divContent = document.createElement("div");
 		divContent.classList.add("element");
 		
-		var h3Content = document.createElement("h2");
-		h3Content.classList.add("top");
-		var h3Text = document.createTextNode(project.name);
-		h3Content.appendChild(h3Text);
 		
-		divContent.appendChild(h3Content);
+		var titleContent = document.createElement("h2");
+		titleContent.classList.add("top");
+		var titleText = document.createTextNode(project.name);
+		
+		if (project.hasOwnProperty("projectname"))
+		{
+			// if exists, add link to title
+			var titleLink = document.createElement("a");
+			titleLink.href="https://github.com/rumkugel13/" + project.projectname;
+			titleLink.target="_blank";
+			
+			titleLink.appendChild(titleText);
+			titleContent.appendChild(titleLink);
+		}
+		else
+		{
+			titleContent.appendChild(titleText);
+		}
+		
+		divContent.appendChild(titleContent);
 		
 		var ulContent = document.createElement("ul");
 		project.features.forEach(function(u,j) {

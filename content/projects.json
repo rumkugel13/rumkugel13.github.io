@@ -70,6 +70,7 @@
         "preview": "explosivesdude_wpf_preview.png",
 		"image": "explosivesdude_wpf_screenshot.png",
         "status": "Discontinued",
+		"projectname": "explosivesdude_wpf",
         "features": 
 			[
 				"Up to 4 player P2P multiplayer via tcp", 
@@ -86,6 +87,7 @@
         "preview": "minesweeper_wpf_preview.png",
 		"image": "minesweeper_wpf_screenshot.png",
         "status": "Discontinued",
+		"projectname": "minesweeper_wpf",
         "features": 
 			[
 				"Classic minesweeper",
@@ -100,6 +102,7 @@
         "preview": "snake_wpf_preview.png",
 		"image": "snake_wpf_screenshot.png",
         "status": "Discontinued",
+		"projectname": "snake_wpf",
         "features": 
 			[
 				"Networked multiplayer via tcp",
@@ -115,6 +118,7 @@
         "preview": "tetris_wpf_preview.png",
 		"image": "tetris_wpf_screenshot.png",
         "status": "Discontinued",
+		"projectname": "tetris_wpf",
         "features": 
 			[
 				"First game ever", 
