@@ -110,6 +110,11 @@ img {
 	margin-right: 10px;
 }
 
+.jserror {
+  color: red;
+  text-align: center;
+}
+
 h2 a:link {
   color: #ecf0f1;
 }
