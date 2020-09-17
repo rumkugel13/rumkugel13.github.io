@@ -1,14 +1,14 @@
-<!DOCTYPE html>
+﻿<!DOCTYPE html>
 <html>
 	<head>
 		<meta charset="UTF-8"/>
-		<meta name="description" content="rumkugel13's internet presence"/>
+		<meta name="description" content="rumkugel13's project list"/>
 		<meta name="author" content="rumkugel13"/>
 		<meta name="viewport" content="width=device-width, initial-scale=1.0"/>
 		<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
 		<meta http-equiv="Pragma" content="no-cache" />
 		<meta http-equiv="Expires" content="0" />
-		<title>I now have website</title>
+		<title>Projects made by rumkugel13</title>
 		<link rel="stylesheet" href="styles.css"/>
 		<script type="application/javascript" src="content/content_builder.js?v=2"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
@@ -23,42 +23,40 @@
 	</head>
 	<body>
 		<header>
-			<h1>rumkugel13's internet presence</h1>
+			<h1>Projects made by rumkugel13</h1>
 		</header>
 		<nav class="border">
 			<ul>
-				<li><a href="index.html" class="active">Home</a></li>
-				<li><a href="projects.html">Projects</a></li>
+				<li><a href="index.html">Home</a></li>
+				<li><a href="projects.html" class="active">Projects</a></li>
 				<li style="float:right;"><a href="about.html">About</a></li>
 			</ul>
 		</nav>
 		<div id="container" class="container">
 			<div class="content wrapper description">
 				<p class="paragraph">
-                    <!-- Sticky? -->
-					Welcome to my website!<br />
-					Check out some of the projects i made.<br />
+					These are some games i developed over the years.
+					Some of them i made in a few weeks, others took longer (I didn't work full-time on them).
+					Sometimes i continued development after a few months/years, so i provided just the year the project started.<br>
+					Executables and/or source code are not available for now.<br>
+					Click on the preview images to see a full screenshot of a project.<br>
+					As you can see, most if not all games are copies/clones of other well-known (arcade) games.
+					I have yet to develop an original game, but these helped a lot in learning how to make games.
 				</p>
 			</div>
-			<div class="content wrapper description">
-				<p class = "paragraph">
-					-- UPDATE 12.09.2020 --<br>
-					Source code for all the WPF games has been published to github.<br>
-					Check them out by clicking on their titles.
-				</p>
+			<div id="loadcontent">
+				<script type="application/javascript">loadContent();</script>
+				Something went wrong here...
 			</div>
-			<div class="content wrapper description">
-				<p class = "paragraph">
-					-- UPDATE 17.09.2020 --<br>
-					Now with navigation bar! :D<br>
-					Expect more changes in the near future.
-				</p>
+			<div class="subheader">
+				<h2>Project list</h2>
 			</div>
 			<!-- use below as a template -->
 			<div class="content wrapper" style="display:none;">
 				<div class="element">
 					<a href="favicons/favicon_256.png" target="_blank" >
 						<img src="favicons/favicon_128.png" alt="Preview of project screenshot"/>
+						<!--<div class="centered">Centered Text</div>-->
 					</a>
 				</div>
 				<div class="element">
