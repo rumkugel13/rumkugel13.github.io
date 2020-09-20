@@ -10,7 +10,7 @@
 		<meta http-equiv="Expires" content="0" />
 		<title>Projects made by rumkugel13</title>
 		<link rel="stylesheet" href="styles.css"/>
-		<script type="application/javascript" src="content/content_builder.js?v=2"></script>
+		<script type="application/javascript" src="content/content_builder2.js?v=2"></script>
 		<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet"/>
 		<link rel="icon" href="favicons/favicon_16.png" sizes="16x16" type="image/png"/>
 		<link rel="icon" href="favicons/favicon_32.png" sizes="32x32" type="image/png"/>
@@ -29,54 +29,90 @@
 			<div>
 				<ul class="navlist border">
 					<li><a href="index.html">Home</a></li>
-					<li><a href="projects.html" class="active">Projects</a></li>
-					<li><a href="projects2.html">Projects2</a></li>
+					<li><a href="projects.html">Projects</a></li>
+					<li><a href="projects2.html" class="active">Projects2</a></li>
 					<li style="float:right;"><a href="about.html">About</a></li>
 				</ul>
 			</div>
 		</nav>
-
 		<div id="container" class="container">
 			<div class="content wrapper description">
 				<p class="paragraph">
 					These are some games i developed over the years.
 					Some of them i made in a few weeks, others took longer (I didn't work full-time on them).
 					Sometimes i continued development after a few months/years, so i provided just the year the project started.<br>
-					Executables and/or source code are not available for now.<br>
-					Click on the preview images to see a full screenshot of a project.<br>
+					Executables and/or source code is available for select projects.<br>
 					As you can see, most if not all games are copies/clones of other well-known (arcade) games.
 					I have yet to develop an original game, but these helped a lot in learning how to make games.
 				</p>
 			</div>
+			<div class="subheader">
+				<h2>Project list</h2>
+			</div>
+		</div>
+		<div id="projectgrid" class="grid">
 			<div id="loadcontent">
 				<script type="application/javascript">loadContent();</script>
 				<p class="jserror">Something went wrong here...<br>Make sure javascript is enabled.</p>
 			</div>
-			<div class="subheader">
-				<h2>Project list</h2>
-			</div>
 			<!-- use below as a template -->
-			<div class="content wrapper" style="display:none;">
-				<div class="element">
-					<a href="favicons/favicon_256.png" target="_blank" >
-						<img src="favicons/favicon_128.png" alt="Preview of project screenshot"/>
-						<!--<div class="centered">Centered Text</div>-->
-					</a>
-				</div>
-				<div class="element">
-					<h2 class="top">Project 1</h2>
-					<ul>
-						<li>Feature 1</li>
-						<li>Feature 2</li>
-						<li>Feature 3</li>
-					</ul>
-				</div>
-				<div class="extra">
-					<h3 class="top">year</h3>
-					<h4 class="bot">status</h4>
-				</div>
+			<div class="gridelements border" style="display:none;">
+				<a class="imgcontainer" href="favicons/favicon_256.png" target="_blank">
+					<img src="favicons/favicon_256.png" alt="Preview of project screenshot" />
+					<div class="centered">Click to enlarge</div>
+				</a>
+				<h2 class="subheader">Project 1</h2>
+				<ul class="zeromargin">
+					<li>Feature 1</li>
+					<li>Feature 2</li>
+					<li>Feature 3</li>
+				</ul>
 			</div>
 			<!-- end of template -->
+			<!-- test -->
+			<div class="gridelements border" style="display:none;">
+				<a class="imgcontainer" href="favicons/favicon_256.png" target="_blank">
+					<img style="" src="favicons/favicon_256.png" alt="Preview of project screenshot" />
+					<div class="centered">Click to enlarge</div>
+				</a>
+				<h2 class="subheader">Project 2</h2>
+				<ul class="zeromargin">
+					<li>Feature 1</li>
+					<li>Feature 2</li>
+					<li>Feature 3</li>
+					<li>Feature 4</li>
+					<li>Feature 5</li>
+				</ul>
+				<h4 style="float:right; align-self:end;">1970</h4>
+			</div>
+			<div class="gridelements border" style="display:none;">
+				<a class="imgcontainer" href="favicons/favicon_256.png" target="_blank">
+					<img style="" src="favicons/favicon_256.png" alt="Preview of project screenshot" />
+					<div class="centered">Click to enlarge</div>
+				</a>
+				<h2 class="subheader">Project 2: Extended</h2>
+				<ul class="zeromargin">
+					<li>Feature 1</li>
+					<li>Feature 2</li>
+					<li>Feature 3</li>
+				</ul>
+			</div>
+			<div class="gridelements border" style="display:none;">
+				<a class="imgcontainer" href="favicons/favicon_256.png" target="_blank">
+					<img style="" src="favicons/favicon_256.png" alt="Preview of project screenshot" />
+					<div class="centered">Click to enlarge</div>
+				</a>
+				<h2 class="subheader">Project 3</h2>
+				<ul class="zeromargin">
+					<li>Feature 1</li>
+					<li>Feature 2</li>
+					<li>Feature 3</li>
+					<li>Feature 4</li>
+					<li>Feature 5</li>
+					<li>Feature 6</li>
+				</ul>
+			</div>
+			<!-- end of test -->
 		</div>
 		<footer>
 			© 2020 <a href="https://github.com/rumkugel13" target="_blank">rumkugel13</a>

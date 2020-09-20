@@ -13,7 +13,7 @@ function loadContent() {
 }
 
 function createProjectList(listData) {
-	var container = document.getElementById("container");
+	var container = document.getElementById("projectgrid");
 	
 	// foreach project in json
 	listData.forEach(function(v,i){
@@ -24,16 +24,14 @@ function createProjectList(listData) {
 function createSingleProjectEntry(container, project) {
 	// create main div first
 	var main = document.createElement("div");
-	main.classList.add("content");
-	main.classList.add("wrapper");
+	main.classList.add("gridelements");
+	main.classList.add("border");
 		
-	// create image div + a + img
-	var divImage = document.createElement("div");
-	divImage.classList.add("element");
-		
+	// create image div + a + img		
 	var aImage = document.createElement("a");
 	aImage.href="content/images/" + project.image;
 	aImage.target = "_blank";
+	aImage.classList.add("imgcontainer");
 
 	// add img to a
 	var image = document.createElement("img");
@@ -43,15 +41,17 @@ function createSingleProjectEntry(container, project) {
 	// image.onerror="this.src='favicons/favicon_256.png'";
 	aImage.appendChild(image);
 
-	divImage.appendChild(aImage);
-	main.appendChild(divImage);
+	// add text to image
+	var imageText = document.createElement("div");
+	imageText.classList.add("centered");
+	imageText.appendChild(document.createTextNode("Click to enlarge"));
+	aImage.appendChild(imageText);
+
+	main.appendChild(aImage);
 		
-	// create div + title + featurelist
-	var divContent = document.createElement("div");
-	divContent.classList.add("element");
-		
+	// create title + featurelist
 	var titleContent = document.createElement("h2");
-	titleContent.classList.add("top");
+	titleContent.classList.add("subheader");
 	var titleText = document.createTextNode(project.name);
 		
 	if (project.hasOwnProperty("projectname"))
@@ -69,9 +69,10 @@ function createSingleProjectEntry(container, project) {
 		titleContent.appendChild(titleText);
 	}
 		
-	divContent.appendChild(titleContent);
+	main.appendChild(titleContent);
 		
 	var ulContent = document.createElement("ul");
+	ulContent.classList.add("zeromargin");
 	project.features.forEach(function(u,j) {
 		var liElement = document.createElement("li");
 		var liText = document.createTextNode(u);
@@ -79,26 +80,25 @@ function createSingleProjectEntry(container, project) {
 		ulContent.appendChild(liElement);
 	});
 		
-	divContent.appendChild(ulContent);
-	main.appendChild(divContent);
+	main.appendChild(ulContent);
 		
 	// create div + year + status
-	var divExtra = document.createElement("div");
-	divExtra.classList.add("extra");
+	//var divExtra = document.createElement("div");
+	//divExtra.classList.add("extra");
 		
-	var h4Year = document.createElement("h3");
-	h4Year.classList.add("top");
-	var h4Text = document.createTextNode(project.year);
-	h4Year.appendChild(h4Text);
-	divExtra.appendChild(h4Year);
+	//var h4Year = document.createElement("h3");
+	//h4Year.classList.add("top");
+	//var h4Text = document.createTextNode(project.year);
+	//h4Year.appendChild(h4Text);
+	//divExtra.appendChild(h4Year);
 		
-	var h5Status = document.createElement("h4");
-	h5Status.classList.add("bot");
-	var h5Text = document.createTextNode(project.status);
-	h5Status.appendChild(h5Text);
-	divExtra.appendChild(h5Status);
+	//var h5Status = document.createElement("h4");
+	//h5Status.classList.add("bot");
+	//var h5Text = document.createTextNode(project.status);
+	//h5Status.appendChild(h5Text);
+	//divExtra.appendChild(h5Status);
 		
-	main.appendChild(divExtra);
+	//main.appendChild(divExtra);
 		
 	container.appendChild(main);
 }
