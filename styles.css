@@ -189,7 +189,12 @@ a:hover, a:active {
 }
 
 .zeromargin {
-    margin: 0;
+    
+}
+
+div.gridelements ul {
+    margin: 0 auto;
+    padding-left: inherit;
 }
 
 .imgcontainer {
