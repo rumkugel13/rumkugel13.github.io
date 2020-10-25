@@ -54,6 +54,8 @@ nav div {
 
 .navlist li .active {
     background-color: var(--active-color);
+    font-size: 1.5em;
+    padding: 0.5em;
 }
 
 .subheader {
