@@ -41,6 +41,7 @@
         "preview": "spaceinvaders_preview.png",
 		"image": "spaceinvaders_screenshot2.png",
         "status": "Discontinued",
+		"projectname": "SpaceInvaders",
         "features": 
 			[
 				"Second game made in MonoGame", 
