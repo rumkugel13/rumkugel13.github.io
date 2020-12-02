@@ -5,6 +5,7 @@
         "preview": "stackitup_preview.png",
 		"image": "stackitup_screenshot.png",
         "status": "Discontinued",
+		"projectname": "StackItUp",
         "features": 
 			[
 				"Made in MonoGame", 
@@ -25,6 +26,7 @@
         "preview": "eightball_preview.png",
 		"image": "eightball_screenshot.png",
         "status": "Discontinued",
+		"projectname": "EightBall",
         "features": 
 			[
 				"Made in MonoGame", 
