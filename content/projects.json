@@ -58,6 +58,7 @@
         "preview": "asteroids_preview.png",
 		"image": "asteroids_screenshot.png",
         "status": "Discontinued",
+		"projectname": "Asteroids",
         "features": 
 			[
 				"First game made in MonoGame", 
