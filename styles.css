@@ -42,6 +42,10 @@ nav div {
     display: block;
 }
 
+.navlist li:last-child {
+    float: right;
+}
+
 .navlist li a {
     display: block;
     text-decoration: none;
@@ -54,8 +58,6 @@ nav div {
 
 .navlist li .active {
     background-color: var(--active-color);
-    font-size: 1.5em;
-    padding: 0.5em;
 }
 
 .subheader {
