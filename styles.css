@@ -215,3 +215,8 @@ div.gridelements ul {
     opacity: 1;
     color: var(--text-color);
 }
+
+iframe {
+    border-style: solid;
+    border-color: var(--border-color);
+}
