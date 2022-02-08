@@ -49,7 +49,7 @@ function createSingleProjectEntry(container, project) {
 
 	main.appendChild(aImage);
 		
-	// create title + featurelist
+	// create title
 	var titleContent = document.createElement("h2");
 	titleContent.classList.add("subheader");
 	var titleText = document.createTextNode(project.name);
@@ -70,7 +70,15 @@ function createSingleProjectEntry(container, project) {
 	}
 		
 	main.appendChild(titleContent);
-		
+
+	// create description
+	var descContent = document.createElement("p");
+	descContent.classList.add("description");
+	descContent.appendChild(document.createTextNode(project.description));
+
+	main.appendChild(descContent);
+
+	// create featurelist
 	var ulContent = document.createElement("ul");
 	ulContent.classList.add("zeromargin");
 	project.features.forEach(function(u,j) {

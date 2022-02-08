@@ -46,7 +46,7 @@ function createSingleProjectEntry(container, project) {
 	divImage.appendChild(aImage);
 	main.appendChild(divImage);
 		
-	// create div + title + featurelist
+	// create div + title
 	var divContent = document.createElement("div");
 	divContent.classList.add("element");
 		
@@ -70,7 +70,15 @@ function createSingleProjectEntry(container, project) {
 	}
 		
 	divContent.appendChild(titleContent);
-		
+
+	// create description
+	var descContent = document.createElement("p");
+	descContent.classList.add("top");
+	descContent.appendChild(document.createTextNode(project.description));
+
+	divContent.appendChild(descContent);
+
+	// create featurelist
 	var ulContent = document.createElement("ul");
 	project.features.forEach(function(u,j) {
 		var liElement = document.createElement("li");
