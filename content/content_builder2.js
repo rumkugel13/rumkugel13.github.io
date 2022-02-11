@@ -89,24 +89,22 @@ function createSingleProjectEntry(container, project) {
 	});
 		
 	main.appendChild(ulContent);
-		
-	// create div + year + status
-	//var divExtra = document.createElement("div");
-	//divExtra.classList.add("extra");
-		
-	//var h4Year = document.createElement("h3");
-	//h4Year.classList.add("top");
-	//var h4Text = document.createTextNode(project.year);
-	//h4Year.appendChild(h4Text);
-	//divExtra.appendChild(h4Year);
-		
-	//var h5Status = document.createElement("h4");
-	//h5Status.classList.add("bot");
-	//var h5Text = document.createTextNode(project.status);
-	//h5Status.appendChild(h5Text);
-	//divExtra.appendChild(h5Status);
-		
-	//main.appendChild(divExtra);
+
+	// create footer with year and status
+	var divFooter = document.createElement("div");
+	divFooter.classList.add("subfooter");
+
+	var h4Year = document.createElement("h4");
+	var h4Text = document.createTextNode(project.year);
+	h4Year.appendChild(h4Text);
+	divFooter.appendChild(h4Year);
+
+	var h4Status = document.createElement("h4");
+	var h4Text2 = document.createTextNode(project.status);
+	h4Status.appendChild(h4Text2);
+	divFooter.appendChild(h4Status);
+
+	main.appendChild(divFooter);
 		
 	container.appendChild(main);
 }
