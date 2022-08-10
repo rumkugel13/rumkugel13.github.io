@@ -1,5 +1,19 @@
 [
   {
+    "name": "Battleships",
+    "year": 2022,
+    "preview": "battleships_preview.png",
+    "image": "battleships_screenshot.png",
+    "status": "In Development",
+    "description": "Classic Battleships game, made with Monogame",
+    "features": [
+      "Made in MonoGame",
+      "Battleships game",
+      "AI Singleplayer",
+      "Online Multiplayer"
+    ]
+  },
+  {
     "name": "StackItUp",
     "year": 2020,
     "preview": "stackitup_preview.png",

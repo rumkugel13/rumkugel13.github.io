@@ -28,7 +28,7 @@ function createEntry(project, template) {
 	template = template.replace("_imagelink", "content/images/" + project.image);
 	template = template.replace("_imagepreview", "content/images/" + project.preview);
 	template = template.replaceAll("_largeimage", project.name.toLowerCase() + "_image");
-	template = template.replaceAll("_projecttag", project.projectname);
+	template = template.replaceAll("_projecttag", project.name);
 
 	if (project.hasOwnProperty("projectname")) {
 		var link = `<a href=${"https://github.com/rumkugel13/" + project.projectname} target="_blank">${project.name}</a>`;
