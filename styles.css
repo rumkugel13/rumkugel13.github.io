@@ -2,16 +2,36 @@ body {
     margin-left: auto;
     margin-right: auto;
     font-family: 'Ubuntu', sans-serif;
-    background: #2c3e50;
-    background: repeating-linear-gradient( 30deg, #2c3e50, #2c3e50 200px, #34495e 200px, #34495e 400px );
+    background: var(--backdrop-color);
+    background: repeating-linear-gradient( 30deg, var(--backdrop-color), var(--backdrop-color) 200px, var(--background-color) 200px, var(--background-color) 400px );
     background-attachment: fixed;
-    color: #ecf0f1;
-    --text-color: #ecf0f1;
-    --link-hover-color: #3498db;
+    color: var(--text-color);
     --dark-color: #34495e;
     --darker-color: #2c3e50;
+    --light-color: #bdc3c7;
+    --lighter-color: #ecf0f1;
     --border-color: #7f8c8d;
     --active-color: #27ae60;
+    --text-color: var(--lighter-color);
+    --link-hover-color: #3498db;
+    --background-color: var(--dark-color);
+    --backdrop-color: var(--darker-color);
+}
+
+@media (prefers-color-scheme: light) {
+    body {
+        --text-color: var(--darker-color);
+        --background-color: var(--light-color);
+        --backdrop-color: var(--lighter-color);
+    }
+}
+
+@media (prefers-color-scheme: dark) {
+    body {
+        --text-color: var(--lighter-color);
+        --background-color: var(--dark-color);
+        --backdrop-color: var(--darker-color);
+    }
 }
 
 header, footer {
@@ -29,7 +49,7 @@ nav div {
 }
 
 .navlist {
-    background: var(--dark-color);
+    background: var(--background-color);
     padding: 0;
     margin: 0 1em;
     overflow: hidden;
@@ -83,7 +103,7 @@ nav div {
 
 .content {
     margin-bottom: 20px;
-    background: var(--dark-color);
+    background: var(--background-color);
     padding: 10px;
     border: 2px;
     border-color: var(--border-color);
@@ -183,7 +203,7 @@ a:hover, a:active {
     padding: 1em;
     margin: 1em;
     flex-direction: column;
-    background: var(--dark-color);
+    background: var(--background-color);
 }
 
 .grid {
@@ -195,7 +215,6 @@ a:hover, a:active {
 }
 
 .zeromargin {
-    
 }
 
 div.gridelements ul {
@@ -269,7 +288,7 @@ div.popup {
     z-index: 200;
     transform: translate(-50%, -50%);
     padding: 1em;
-    background: var(--dark-color);
+    background: var(--background-color);
 }
 
 img.popup {
@@ -281,17 +300,18 @@ img.popup {
 }
 
 div.popup > a.close {
-    position:absolute;
-    font-weight:bold;
-    right:10px;
+    position: absolute;
+    font-weight: bold;
+    right: 10px;
+    color: var(--lighter-color);
 }
 
 div.popup > a.close.word {
-    top:100%;
-    margin-top:5px;
+    top: 100%;
+    margin-top: 5px;
 }
 
 div.popup > a.close.x {
     bottom: 100%;
-    margin-bottom:5px;
+    margin-bottom: 5px;
 }
