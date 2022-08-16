@@ -7,13 +7,17 @@
 	<link rel="stylesheet" href="styles.css" />
 	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
 	<link rel="icon" href="favicon.ico" />
+	<script type="application/javascript" src="content/content_builder4.js?v=2"></script>
 </head>
 	<body>
 		<header>
 			<h1>Projects</h1>
 		</header>
 		<div id="projectgrid" class="grid">
-_projectlist
+			<div id="loadcontent">
+				<script type="application/javascript">loadContent();</script>
+				<p class="jserror">Something went wrong here...<br>Make sure javascript is enabled.</p>
+			</div>
 		</div>
 		<footer>
 			© 2020 <a href="https://github.com/rumkugel13" target="_blank">rumkugel13</a>
