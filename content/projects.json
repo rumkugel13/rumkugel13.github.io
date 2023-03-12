@@ -5,12 +5,12 @@
     "preview": "battleships_preview.png",
     "image": "battleships_screenshot.png",
     "status": "In Development",
+    "projectname": "Battleships",
     "description": "Classic Battleships game, made with Monogame",
     "features": [
       "Made in MonoGame",
       "Battleships game",
-      "AI Singleplayer",
-      "Online Multiplayer"
+      "Singleplayer"
     ]
   },
   {
