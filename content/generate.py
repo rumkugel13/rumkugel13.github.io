@@ -1,15 +1,15 @@
 import json
 import copy
 
-f = open("content/projects.json", encoding='utf-8-sig')
+f = open("projects.json", encoding='utf-8-sig')
 projectData = json.load(f)
 f.close()
 
-f = open("content/index_template.html", encoding='utf-8-sig')
+f = open("index_template.html", encoding='utf-8-sig')
 indexTemplate = f.read()
 f.close()
 
-f = open("content/template2.html", encoding='utf-8-sig')
+f = open("template2.html", encoding='utf-8-sig')
 projectTemplate = f.read()
 f.close()
 
@@ -43,6 +43,6 @@ for project in projectData:
 
 indexTemplate = indexTemplate.replace("_projectlist", projectlist)
 
-result = open("index.html", 'w', encoding='utf-8')
+result = open("../index.html", 'w', encoding='utf-8')
 result.write(indexTemplate)
 result.close()
