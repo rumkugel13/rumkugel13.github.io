@@ -24,23 +24,24 @@ for project in projectData:
     temp = temp.replace("_projecttag", project['name'])
     
     if 'projectname' in project:
-        link = f'\t\t\t\t\t<a href={"https://github.com/rumkugel13/" + project["projectname"]} target="_blank">{project["name"]}</a>'
+        link = f'<a href={"https://github.com/rumkugel13/" + project["projectname"]} target="_blank">{project["name"]}</a>'
         temp = temp.replace("_projecttitle", link)
     else:
-        temp = temp.replace("_projecttitle", '\t\t\t\t\t' + project['name'])
+        temp = temp.replace("_projecttitle", project['name'])
 
     list = ""
     for feature in project['features']:
-        list += f'\t\t\t\t\t<li>{feature}</li>\n'
+        list += f'\t\t\t\t<li>{feature}</li>\n'
     list = list.rstrip()
     
-    temp = temp.replace("_featurelist", list);
+    temp = temp.replace("_featurelist", list)
 
     temp = temp.replace("_year", str(project['year']))
     temp = temp.replace("_status", project['status'])
 
-    projectlist += temp
+    projectlist += temp + "\n"
 
+projectlist = projectlist.rstrip()
 indexTemplate = indexTemplate.replace("_projectlist", projectlist)
 
 result = open("../index.html", 'w', encoding='utf-8')
