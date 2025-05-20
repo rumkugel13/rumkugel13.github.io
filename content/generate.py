@@ -1,5 +1,8 @@
 import json
 import copy
+import os
+
+os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
 f = open("projects.json", encoding='utf-8-sig')
 projectData = json.load(f)
