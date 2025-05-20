@@ -1,0 +1,62 @@
+[
+    {
+        "title": "AdventOfCode",
+        "private": false,
+        "description": "Solutions to the Advent of Code challenges.",
+        "language": "Various"
+    },
+    {
+        "title": "EverybodyCodes",
+        "private": false,
+        "description": "Solutions to the Everybody Codes challenges.",
+        "language": "Various"
+    },
+    {
+        "title": "mcc",
+        "private": false,
+        "description": "Mini C-Compiler, based on Nora Sandler's Blog Series 'Writing a C Compiler'.",
+        "language": "C#"
+    },
+    {
+        "title": "mcc2",
+        "private": false,
+        "description": "Second iteration of the mini C-Compiler, based on Nora Sandler's finished Book 'Writing a C Compiler'.",
+        "language": "C#"
+    },
+    {
+        "title": "Kadro",
+        "private": true,
+        "description": "Monogame based game framework, used for some of my games.",
+        "language": "C#"
+    },
+    {
+        "title": "RKDnet",
+        "private": true,
+        "description": "A library for game networking, based on Lidgren.Network, used in my games.",
+        "language": "C#"
+    },
+    {
+        "title": "Simulado",
+        "private": true,
+        "description": "Project for Monogame experiments, such as particle based physics.",
+        "language": "C#"
+    },
+    {
+        "title": "browse-d",
+        "private": false,
+        "description": "A web browser based on 'browser.engineering'.",
+        "language": "D"
+    },
+    {
+        "title": "bcvm",
+        "private": false,
+        "description": "An experimental bytecode based virtual machine, used as mcc backend.",
+        "language": "D"
+    },
+    {
+        "title": "rvemu-d",
+        "private": false,
+        "description": "RISC-V emulator, based on 'rvemu'.",
+        "language": "D"
+    }
+]
