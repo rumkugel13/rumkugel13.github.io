@@ -8,11 +8,11 @@ f = open("projects.json", encoding='utf-8-sig')
 projectData = json.load(f)
 f.close()
 
-f = open("index_template.html", encoding='utf-8-sig')
+f = open("games.html", encoding='utf-8-sig')
 indexTemplate = f.read()
 f.close()
 
-f = open("template2.html", encoding='utf-8-sig')
+f = open("template_popup.html", encoding='utf-8-sig')
 projectTemplate = f.read()
 f.close()
 
@@ -45,7 +45,7 @@ for project in projectData:
     projectlist += temp + "\n"
 
 projectlist = projectlist.rstrip()
-indexTemplate = indexTemplate.replace("_projectlist", projectlist)
+indexTemplate = indexTemplate.replace("__GAMELIST__", projectlist)
 
 result = open("../index.html", 'w', encoding='utf-8')
 result.write(indexTemplate)
