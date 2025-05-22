@@ -1,62 +1,100 @@
-﻿<!DOCTYPE html>
+<!DOCTYPE html>
 <html>
-<head>
-	<title>Projects</title>
-	<meta charset="UTF-8" />
-	<meta name="viewport" content="width=device-width, initial-scale=1.0" />
-	<!--<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
-	<meta http-equiv="Pragma" content="no-cache" />
-	<meta http-equiv="Expires" content="0" />-->
-	<link rel="stylesheet" href="styles.css" />
-	<link href="https://fonts.googleapis.com/css2?family=Ubuntu&display=swap" rel="stylesheet" />
-	<link rel="icon" href="favicon.ico" />
-	<script type="application/javascript" src="content/content_builder.js?v=2"></script>
-</head>
-	<body>
-		<header>
-			<h1>Projects</h1>
-		</header>
-		<nav>
-			<div>
-				<ul class="navlist border">
-					<li><a href="index.html">Home</a></li>
-					<li><a href="projects.html" class="active">Projects</a></li>
-					<li><a href="projects2.html">Projects2</a></li>
-					<li><a href="about.html">About</a></li>
-				</ul>
-			</div>
-		</nav>
 
-		<div id="container" class="container">
-			<div id="loadcontent">
-				<script type="application/javascript">loadContent();</script>
-				<p class="jserror">Something went wrong here...<br>Make sure javascript is enabled.</p>
-			</div>
-			<!-- use below as a template -->
-			<div class="content wrapper" style="display:none;">
-				<div class="element">
-					<a href="content/default_image.png" target="_blank" >
-						<img src="content/default_image.png" alt="Preview of project screenshot"/>
-						<!--<div class="centered">Centered Text</div>-->
-					</a>
-				</div>
-				<div class="element">
-					<h2 class="top">Project 1</h2>
-					<ul>
-						<li>Feature 1</li>
-						<li>Feature 2</li>
-						<li>Feature 3</li>
-					</ul>
-				</div>
-				<div class="extra">
-					<h3 class="top">year</h3>
-					<h4 class="bot">status</h4>
-				</div>
-			</div>
-			<!-- end of template -->
-		</div>
-		<footer>
-			© 2020 <a href="https://github.com/rumkugel13" target="_blank">rumkugel13</a>
-		</footer>
-	</body>
+<head>
+    <meta charset="UTF-8" />
+    <title>Projectlist</title>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="styles.css">
+    <link rel="icon" href="favicon.ico">
+</head>
+
+<body>
+    <header>
+        <h1>Projects</h1>
+    </header>
+    <ul class="container">
+        <li class="content">
+            <h3 class="subheader">
+                <a href="https://www.github.com/rumkugel13/AdventOfCode" target="_blank">AdventOfCode</a>
+            </h3>
+            <p>
+                Solutions to the Advent of Code challenges.
+            </p>
+            <p>
+                Language: Various
+            </p>
+        </li>
+        <li class="content">
+            <h3 class="subheader">
+                <a href="https://www.github.com/rumkugel13/EverybodyCodes" target="_blank">EverybodyCodes</a>
+            </h3>
+            <p>
+                Solutions to the Everybody Codes challenges.
+            </p>
+            <p>
+                Language: Various
+            </p>
+        </li>
+        <li class="content">
+            <h3 class="subheader">
+                <a href="https://www.github.com/rumkugel13/mcc" target="_blank">mcc</a>
+            </h3>
+            <p>
+                Mini C-Compiler, based on Nora Sandler's Blog Series 'Writing a C Compiler'.
+            </p>
+            <p>
+                Language: C#
+            </p>
+        </li>
+        <li class="content">
+            <h3 class="subheader">
+                <a href="https://www.github.com/rumkugel13/mcc2" target="_blank">mcc2</a>
+            </h3>
+            <p>
+                Second iteration of the mini C-Compiler, based on Nora Sandler's finished Book 'Writing a C Compiler'.
+            </p>
+            <p>
+                Language: C#
+            </p>
+        </li>
+        <li class="content">
+            <h3 class="subheader">
+                <a href="https://www.github.com/rumkugel13/browse-d" target="_blank">browse-d</a>
+            </h3>
+            <p>
+                A web browser based on 'browser.engineering'.
+            </p>
+            <p>
+                Language: D
+            </p>
+        </li>
+        <li class="content">
+            <h3 class="subheader">
+                <a href="https://www.github.com/rumkugel13/bcvm" target="_blank">bcvm</a>
+            </h3>
+            <p>
+                An experimental bytecode based virtual machine, used as mcc backend.
+            </p>
+            <p>
+                Language: D
+            </p>
+        </li>
+        <li class="content">
+            <h3 class="subheader">
+                <a href="https://www.github.com/rumkugel13/rvemu-d" target="_blank">rvemu-d</a>
+            </h3>
+            <p>
+                RISC-V emulator, based on 'rvemu'.
+            </p>
+            <p>
+                Language: D
+            </p>
+        </li>
+    </ul>
+    <footer>
+        © 2025 <a href="https://github.com/rumkugel13" target="_blank">rumkugel13</a>
+    </footer>
+</body>
+
 </html>

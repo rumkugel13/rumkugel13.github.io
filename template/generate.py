@@ -33,6 +33,6 @@ for project in projectData:
 projectlist = projectlist.rstrip()
 indexTemplate = indexTemplate.replace("__PROJECTLIST__", projectlist)
 
-result = open("../projectsnew.html", 'w', encoding='utf-8')
+result = open("../projects.html", 'w', encoding='utf-8')
 result.write(indexTemplate)
 result.close()
