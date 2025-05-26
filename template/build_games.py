@@ -4,17 +4,19 @@ import os
 
 os.chdir(os.path.dirname(os.path.abspath(__file__)))
 
-f = open("projects.json", encoding='utf-8-sig')
+f = open("data/games.json", encoding='utf-8-sig')
 projectData = json.load(f)
 f.close()
 
-f = open("games.html", encoding='utf-8-sig')
+f = open("games_base.html", encoding='utf-8-sig')
 indexTemplate = f.read()
 f.close()
 
 f = open("template_popup.html", encoding='utf-8-sig')
 projectTemplate = f.read()
 f.close()
+
+indexTemplate = indexTemplate.replace("__PAGETITLE__", "Games")
 
 projectlist = ""
 
