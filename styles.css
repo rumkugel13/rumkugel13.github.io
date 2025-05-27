@@ -45,6 +45,7 @@ nav ul {
     min-width: 300px;
     max-width: 550px;
     background: var(--background-color);
+    border-radius: 10px;
     padding: 0;
     overflow: hidden;
     list-style: none;
