@@ -1,40 +1,31 @@
 import json
-import copy
-import os
 
-os.chdir(os.path.dirname(os.path.abspath(__file__)))
+def build_projects():
+    with open("data/projects.json", encoding='utf-8-sig') as f:
+        projectData = json.load(f)
 
-f = open("data/projects.json", encoding='utf-8-sig')
-projectData = json.load(f)
-f.close()
+    with open("projects_base.html", encoding='utf-8-sig') as f:
+        htmlTemplate = f.read()
 
-f = open("projects_base.html", encoding='utf-8-sig')
-indexTemplate = f.read()
-f.close()
+    with open("project_element.html", encoding='utf-8-sig') as f:
+        elementTemplate = f.read()
 
-f = open("project_element.html", encoding='utf-8-sig')
-elementTemplate = f.read()
-f.close()
+    htmlTemplate = htmlTemplate.replace("__PAGETITLE__", "Projects")
 
-indexTemplate = indexTemplate.replace("__PAGETITLE__", "Projects")
+    projectlist = ""
 
-projectlist = ""
+    for project in projectData:
+        if project['private'] == True:
+            continue
 
-for project in projectData:
-    if project['private'] == True:
-        continue
+        temp = elementTemplate.replace("__PROJECTNAME__", project['title'])
+        temp = temp.replace("__DESCRIPTION__", project['description'])
+        temp = temp.replace("__LANGUAGE__", project['language'])
 
-    temp = copy.deepcopy(elementTemplate)
-    
-    temp = temp.replace("__PROJECTNAME__", project['title'])
-    temp = temp.replace("__DESCRIPTION__", project['description'])
-    temp = temp.replace("__LANGUAGE__", project['language'])
+        projectlist += temp + "\n"
 
-    projectlist += temp + "\n"
+    projectlist = projectlist.rstrip()
+    htmlTemplate = htmlTemplate.replace("__PROJECTLIST__", projectlist)
 
-projectlist = projectlist.rstrip()
-indexTemplate = indexTemplate.replace("__PROJECTLIST__", projectlist)
-
-result = open("../projects.html", 'w', encoding='utf-8')
-result.write(indexTemplate)
-result.close()
+    with open("../projects.html", 'w', encoding='utf-8') as result:
+        result.write(htmlTemplate)
