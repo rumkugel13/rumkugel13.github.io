@@ -41,5 +41,5 @@ def build_games():
     projectlist = projectlist.rstrip()
     htmlTemplate = htmlTemplate.replace("__GAMELIST__", projectlist)
 
-    with open("../index.html", 'w', encoding='utf-8') as result:
+    with open("../games.html", 'w', encoding='utf-8') as result:
         result.write(htmlTemplate)
